@@ -1,0 +1,22 @@
+import React from 'react';
+import { useFetch } from '../hooks/useFetch';
+import Card from '../components/Card';
+
+const Dashboard: React.FC = () => {
+  const { data, isLoading } = useFetch<any>('dashboard', '/owner/dashboard');
+
+  if (isLoading) return <p>Carregando...</p>;
+
+  return (
+    <div>
+      <h2>Dashboard Executivo</h2>
+      <div className="cards">
+        <Card title="Empresas Ativas" value={data?.portfolio.activeCompanies} />
+        <Card title="Receita Mensal" value={`R$ ${data?.financial.mrr}`} />
+        <Card title="Lucro Líquido" value={`R$ ${data?.financial.netProfit}`} />
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;

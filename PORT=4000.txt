@@ -1,0 +1,36 @@
+PORT=4000
+NODE_ENV=development
+JWT_SECRET=super_secret_jwt_key_replace_in_production_2025
+DATABASE_URL=postgres://postgres:postgres@localhost:5432/connect_motors
+
+COMPANY_NAME="Connect Motors Evolution"
+OWNER_EMAIL=owner@connectmotors.com
+OWNER_NAME="Proprietário Connect Motors"
+DEFAULT_CURRENCY=BRL
+DEFAULT_LANGUAGE=pt-BR
+DEFAULT_TIMEZONE=America/Sao_Paulo
+
+APP_URL=http://localhost:5173
+BACKEND_URL=http://localhost:4000
+CORS_ORIGIN=http://localhost:5173
+
+ENABLE_OWNER_DASHBOARD=true
+ENABLE_MULTI_TENANT=true
+ENABLE_AI_ANALYTICS=true
+ENABLE_FINANCIAL_MODULE=true
+ENABLE_PORTFOLIO_MANAGEMENT=true
+ENABLE_EMPLOYEE_MANAGEMENT=true
+
+RATE_LIMIT_MAX=100
+RATE_LIMIT_WINDOW_MS=900000
+SESSION_TIMEOUT=86400
+
+AI_API_KEY=sk-your-openai-key-here
+EMAIL_PROVIDER=console
+SMS_PROVIDER=console
+
+DEFAULT_MARKETPLACE_FEE=5.0
+DEFAULT_PLATFORM_FEE=2.0
+TRIAL_PERIOD_DAYS=14
+SUPPORT_EMAIL=support@connectmotors.com
+SUPPORT_PHONE=+5511999999999

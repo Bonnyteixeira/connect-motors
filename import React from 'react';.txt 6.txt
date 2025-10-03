@@ -1,0 +1,12 @@
+import React from 'react';
+import { useFetch } from '../hooks/useFetch';
+
+const Portfolio: React.FC = () => {
+  const { data, isLoading } = useFetch<any>('portfolio', '/owner/portfolio');
+
+  if (isLoading) return <p>Carregando portfólio...</p>;
+
+  return (
+    <div>
+      <h2>Portfólio de Empresas</h2>
+      <ul>

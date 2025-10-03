@@ -1,0 +1,18 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+const Sidebar: React.FC = () => {
+  return (
+    <div className="sidebar">
+      <h2>Connect Motors</h2>
+      <nav>
+        <NavLink to="/">Dashboard</NavLink>
+        <NavLink to="/portfolio">Portfólio</NavLink>
+        <NavLink to="/employees">Colaboradores</NavLink>
+        <NavLink to="/financials">Financeiro</NavLink>
+      </nav>
+    </div>
+  );
+};
+
+export default Sidebar;

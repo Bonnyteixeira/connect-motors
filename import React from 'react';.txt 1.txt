@@ -1,0 +1,25 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Portfolio from './pages/Portfolio';
+import Employees from './pages/Employees';
+import Financials from './pages/Financials';
+import Sidebar from './components/Sidebar';
+
+const App: React.FC = () => {
+  return (
+    <div className="app-container">
+      <Sidebar />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/financials" element={<Financials />} />
+        </Routes>
+      </div>
+    </div>
+  );
+};
+
+export default App;
