@@ -1,0 +1,12 @@
+# Porta do servidor
+PORT=4000
+
+# Configuração do banco de dados
+DB_HOST=localhost
+DB_USER=seu_usuario
+DB_PASSWORD=sua_senha
+DB_NAME=nome_do_banco
+
+# Outras variáveis (opcional)
+JWT_SECRET=sua_chave_secreta
+NODE_ENV=development
